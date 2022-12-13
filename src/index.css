@@ -1,0 +1,56 @@
+@tailwind base;
+
+@layer base {
+  h1 {
+    @apply text-2xl  light-mode dark:dark-mode  font-bold uppercase;
+  }
+  h2 {
+    @apply text-xl  light-mode dark:dark-mode font-bold uppercase;
+  }
+  h3 {
+    @apply text-lg light-mode dark:dark-mode   font-bold uppercase;
+  }
+  h4 {
+    @apply text-base light-mode dark:dark-mode   font-bold uppercase;
+  }
+
+  .menu-font {
+    @apply text-base font-bold;
+  }
+
+  .menu-hover {
+    @apply hover:text-blue-400;
+  }
+
+  .dark-mode {
+    @apply bg-slate-800 text-white;
+  }
+  .light-mode {
+    @apply bg-white text-slate-400;
+  }
+}
+
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .field-input {
+    @apply z-50 appearance-none text-xs block w-full  text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500;
+  }
+
+  .field-label {
+    @apply text-left block uppercase font-bold text-sm  text-gray-900 dark:text-white mb-2;
+  }
+
+  .btn-primary {
+    @apply w-full py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
+  }
+}
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
