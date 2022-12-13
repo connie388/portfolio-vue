@@ -51,24 +51,3 @@ export default {
   },
 };
 </script>
-<style scoped>
-/* div button {
-  transition-duration: 0.4s;
-  border-radius: 5px;
-  min-width: 30px;
-} */
-/* .selected {
-  background-color: lightblue;
-}
-
-.unselected {
-  background-color: white;
-} */
-
-/* .selected:hover,
-.unselected:hover {
-  background-color: aquamarine;
-  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
-    0 17px 50px 0 rgba(0, 0, 0, 0.19);
-} */
-</style>
