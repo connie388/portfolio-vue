@@ -150,6 +150,10 @@ export default {
     };
   },
 
+  mounted() {
+    this.isDark = !this.isDark;
+  },
+
   setup() {
     let showMenu = ref(false);
     const isDark = ref(false);

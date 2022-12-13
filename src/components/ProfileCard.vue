@@ -29,9 +29,7 @@
 
     <div id="checkout-box" class="box">
       <router-link :to="{ path: '/Homepage' }">
-        <button class="btn-primary box">
-          Take a look at my portfolio. Click Me!
-        </button>
+        <button class="btn-primary box">Skip Animation</button>
       </router-link>
     </div>
   </div>

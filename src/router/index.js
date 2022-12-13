@@ -6,12 +6,13 @@ const routes = [
     path: "/",
     name: "ProfileCard",
     component: () => import("../components/ProfileCard.vue"),
-    meta: { transition: "fade-slide" },
+    meta: { transition: "fade" },
   },
   {
-    path: "/Homepage",
+    path: "/HomePage",
     name: "Homepage",
     component: () => import("../components/HomePage.vue"),
+    meta: { transition: "fade" },
   },
   {
     path: "/:catchAll(.*)*",

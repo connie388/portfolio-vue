@@ -1,6 +1,6 @@
 <template>
   <router-view v-slot="{ Component, route }">
-    <Transition :name="route.meta.transition">
+    <Transition :name="route.meta.transition" appear>
       <component :is="Component" />
     </Transition>
   </router-view>
@@ -12,19 +12,39 @@ export default {
   components: {
     Transition,
   },
+
+  created() {
+    setTimeout(() => this.$router.push({ path: "/Homepage" }), 5000);
+  },
 };
 </script>
-
-<style scoped>
-.fade-slide-enter-active,
-.fade-slide-leave-active {
-  transition: opacity 2s ease, transform 1s ease-in-out;
-  transform: translateY(0px);
+<style>
+.fade-enter-active {
+  transition: opacity 0.5s ease;
+}
+.fade-leave-active {
+  transition: opacity 1s ease;
 }
 
-.fade-slide-enter-from,
-.fade-slide-leave-to {
+.fade-enter-from,
+.fade-leave-to {
   opacity: 0;
-  transform: translateY(100px);
+}
+.bounce-enter-active {
+  animation: bounce-in 0.5s;
+}
+.bounce-leave-active {
+  animation: bounce-in 0.5s reverse;
+}
+@keyframes bounce-in {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 </style>
