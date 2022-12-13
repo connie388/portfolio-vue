@@ -12,7 +12,6 @@ const routes = [
     path: "/Homepage",
     name: "Homepage",
     component: () => import("../components/HomePage.vue"),
-    meta: { transition: "fade" },
   },
   {
     path: "/:catchAll(.*)*",

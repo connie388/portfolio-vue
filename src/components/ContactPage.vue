@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <div>
     <h4>Contact</h4>
     <div
       class="md:block lg:flex-wrap p-5 relative rounded-md border-2 shadow-lg border-gray-300 dark:border-white"
@@ -62,7 +62,7 @@
         </span>
       </div>
     </div>
-  </section>
+  </div>
 </template>
 
 <script>

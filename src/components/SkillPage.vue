@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <div>
     <h4>Check Out My Skills</h4>
     <div v-for="skill in PROFILE.SKILLS" :key="skill">
       <div class="flex flex-col">
@@ -42,7 +42,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </div>
 </template>
 
 <script>

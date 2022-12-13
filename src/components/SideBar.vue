@@ -1,29 +1,28 @@
 <template>
-  <ul class="invisible md:visible">
-    <li v-for="media in socialMedia" :key="media">
-      <a
-        :href="`${media.link}`"
-        target="_blank" >
-        <!-- data-popover-target="popover-default"
+  <div>
+    <ul class="invisible md:visible">
+      <li v-for="media in socialMedia" :key="media">
+        <a :href="`${media.link}`" target="_blank">
+          <!-- data-popover-target="popover-default"
         data-popover-placement="left"
       > -->
-        <img
-          v-if="!isDark && media.icon"
-          :src="require(`@/assets/icons/${media.icon}`)"
-          class="object-cover h-8 w-8"
-        />
-        <img
-          v-if="isDark && media.icondark"
-          :src="require(`@/assets/icons/${media.icondark}`)"
-          class="object-cover h-8 w-8"
-        />
-        <div v-if="media.name" class="rotate-90 w-8">
-          {{ media.name }}
-        </div></a
-      >
-      <!-- https://flowbite.com/docs/components/popover/ -->
-      <!-- add popup explaination -->
-      <!-- <div
+          <img
+            v-if="!isDark && media.icon"
+            :src="require(`@/assets/icons/${media.icon}`)"
+            class="object-cover h-8 w-8"
+          />
+          <img
+            v-if="isDark && media.icondark"
+            :src="require(`@/assets/icons/${media.icondark}`)"
+            class="object-cover h-8 w-8"
+          />
+          <div v-if="media.name" class="rotate-90 w-8">
+            {{ media.name }}
+          </div></a
+        >
+        <!-- https://flowbite.com/docs/components/popover/ -->
+        <!-- add popup explaination -->
+        <!-- <div
         data-popover
         id="popover-default"
         role="tooltip"
@@ -34,9 +33,10 @@
         </div>
         <div data-popper-arrow></div>
       </div> -->
-    </li>
-  </ul>
-  <div class="invisible md:visible vl"></div>
+      </li>
+    </ul>
+    <div class="invisible md:visible vl"></div>
+  </div>
 </template>
 <script>
 import { PROFILE } from "@/data/data";

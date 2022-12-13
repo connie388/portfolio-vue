@@ -11,7 +11,7 @@ export const PROFILE = {
       name: "TOOLS",
     },
     {
-      name: "FRAMEWORKS/LIBRARIES",
+      name: "FRAMEWORKS",
     },
     {
       name: "DATABASES",
@@ -40,7 +40,7 @@ export const PROFILE = {
     },
     { img: "postman.png", title: "Postman", link: "https://www.postman.com/" },
   ],
-  "FRAMEWORKS/LIBRARIES": [
+  FRAMEWORKS: [
     { img: "react.svg", title: "React JS", link: "https://reactjs.org/" },
     {
       img: "express-js.png",

@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <div>
     <h4>Check Out My Projects</h4>
     <div v-for="project in PROFILE.PROJECTS" :key="project" class="m-5">
       <article
@@ -74,7 +74,7 @@
         </div>
       </article>
     </div>
-  </section>
+  </div>
 </template>
 
 <script>
