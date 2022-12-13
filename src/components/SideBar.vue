@@ -1,6 +1,8 @@
 <template>
   <div>
-    <ul class="invisible md:visible">
+    <ul
+      class="absolute flex right-0 flex-col gap-4 top-24 mr-0 invisible md:visible"
+    >
       <li v-for="media in socialMedia" :key="media">
         <a :href="`${media.link}`" target="_blank">
           <!-- data-popover-target="popover-default"
@@ -16,7 +18,10 @@
             :src="require(`@/assets/icons/${media.icondark}`)"
             class="object-cover h-8 w-8"
           />
-          <div v-if="media.name" class="rotate-90 w-8">
+          <div
+            v-if="media.name"
+            class="rotate-90 w-8 text-black dark:text-white"
+          >
             {{ media.name }}
           </div></a
         >
@@ -35,7 +40,9 @@
       </div> -->
       </li>
     </ul>
-    <div class="invisible md:visible vl"></div>
+    <!-- <div
+      class="invisible md:visible border-r-2 border-black dark:border-white h-72 relative top-[26rem] right-4"
+    ></div> -->
   </div>
 </template>
 <script>
@@ -51,7 +58,7 @@ export default {
 };
 </script>
 <style>
-ul {
+/* ul {
   position: absolute;
   display: flex;
   right: 0;
@@ -59,12 +66,12 @@ ul {
   gap: 1rem;
   top: 100px;
   margin-right: 0;
-}
-.vl {
+} */
+/* .vl {
   border-right: 2px solid gray;
   height: 400px;
   position: relative;
   right: 18px;
   top: 25rem;
-}
+} */
 </style>

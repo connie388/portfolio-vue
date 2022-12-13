@@ -4,10 +4,11 @@
     <div
       class="flex justify-center align-center text-sm font-bold text-black mt-5"
     >
-      <div class="w-3/5">
-        <div class="grid grid-cols-2 lg:grid-cols-4 gap-1">
+      <div class="w-4/5">
+        <div class="grid grid-cols-2 xl:grid-cols-4 gap-1">
           <div class="w-30" v-for="skill in PROFILE.SKILLS" :key="skill">
             <button
+              class="btn"
               :class="{
                 selected: selected[skill.name],
                 unselected: !selected[skill.name],
@@ -51,23 +52,23 @@ export default {
 };
 </script>
 <style scoped>
-div button {
+/* div button {
   transition-duration: 0.4s;
   border-radius: 5px;
   min-width: 30px;
-}
-.selected {
+} */
+/* .selected {
   background-color: lightblue;
 }
 
 .unselected {
   background-color: white;
-}
+} */
 
-.selected:hover,
+/* .selected:hover,
 .unselected:hover {
   background-color: aquamarine;
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
-}
+} */
 </style>

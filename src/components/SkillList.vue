@@ -8,7 +8,7 @@
           <div v-for="skill in selectedList" :key="skill">
             <a :href="`${skill.link}`" target="_blank" class="flex">
               <span
-                class="relative rounded-full bg-sky-100 hover:bg-sky-300 dark:bg-white dark:hover:bg-yellow-300 p-4 mb-1"
+                class="relative rounded-full bg-sky-100 hover:bg-yellow-100 dark:bg-white dark:hover:bg-yellow-300 p-4 mb-1"
               >
                 <img
                   :src="require(`@/assets/icons/${skill.img}`)"
