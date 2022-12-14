@@ -8,7 +8,7 @@
           <div v-for="skill in selectedList" :key="skill">
             <a :href="`${skill.link}`" target="_blank" class="flex">
               <span
-                class="relative rounded-full bg-sky-100 hover:bg-yellow-100 dark:bg-white dark:hover:bg-yellow-300 p-4 mb-1"
+                class="relative rounded-full bg-sky-100 hover:bg-yellow-100  hover:scale-95  dark:bg-white dark:hover:bg-yellow-300 p-4 mb-1"
               >
                 <img
                   :src="require(`@/assets/icons/${skill.img}`)"
@@ -36,10 +36,13 @@ export default {
 
   created() {
     // watch the props to fetch the data again
+    // Even though content of selectedList changed, vue is not able to detect it
+    // So, a variable toggle is used for notify data changed.
     this.$watch(
       () => this.toggle,
       () => {
         this.selectedList = [];
+        // Based on user selected skill types, a new array is created with data from different skill type profile
         PROFILE.SKILLS.forEach((skill) => {
           if (this.selected[skill.name]) {
             this.selectedList = [...this.selectedList, ...PROFILE[skill.name]];

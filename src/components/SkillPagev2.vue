@@ -1,5 +1,6 @@
 <template>
   <div>
+    <!-- In this version, different skill type buttons are displayed and users can select the skill types -->
     <h4>Check Out My Skills</h4>
     <div
       class="flex justify-center align-center text-sm font-bold text-black mt-5"

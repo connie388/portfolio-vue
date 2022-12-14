@@ -1,4 +1,6 @@
 // https://herotofu.com/solutions/guides/vue-send-email
+// Send mail is based on Herotofu user guide
+// Not sure the reliable of this service, so the email functionality will be disabled.
 import { ref } from "vue";
 
 const UseEmail = (endpointUrl) => {

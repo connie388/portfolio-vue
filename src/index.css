@@ -19,7 +19,7 @@
   }
 
   .menu-hover {
-    @apply hover:text-blue-400;
+    @apply hover:text-blue-400  hover:scale-110;
   }
 
   .dark-mode {
@@ -30,11 +30,18 @@
   }
 
   .selected {
-    @apply bg-sky-300 hover:bg-blue-300;
+    @apply transition-all duration-500 bg-gradient-to-br to-blue-600 via-blue-800 from-blue-300 bg-size-200 hover:bg-right-bottom;
   }
 
   .unselected {
-    @apply bg-white hover:bg-blue-300 shadow-md;
+    @apply bg-white hover:bg-blue-100  hover:bg-right-bottom shadow-md;
+  }
+
+  .dark-mode-skill {
+    @apply hover:scale-95 transition-all duration-500 bg-gradient-to-br to-sky-100 via-sky-200 from-sky-100 bg-size-200 hover:bg-right-bottom  p-4 mb-1;
+  }
+  .light-mode-skill {
+    @apply hover:scale-95 transition-all duration-500 bg-gradient-to-br to-yellow-50 via-yellow-100 from-yellow-50 bg-size-200 hover:bg-right-bottom  p-4 mb-1;
   }
 }
 
@@ -51,10 +58,10 @@
   }
 
   .btn-primary {
-    @apply w-full py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
+    @apply w-full py-2 px-4 text-white font-semibold rounded-lg shadow-md  rounded-xl transition-all duration-500 bg-gradient-to-br to-blue-600 via-blue-800 from-blue-300 bg-size-200 hover:bg-right-bottom hover:scale-95 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
   }
   .btn {
-    @apply w-full py-2 px-4  font-semibold rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
+    @apply w-full py-2 px-4 hover:scale-95 font-semibold rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
   }
 }
 

@@ -40,7 +40,7 @@
           <!-- Links  -->
           <div className="flex flex-wrap items-center rounded-b-xl border-t-2">
             <button
-              className="border-2 border-gray-600 rounded-2xl text-white shadow-sm p-1 px-2 m-2 bg-white"
+              className="border-2 border-gray-600 rounded-2xl text-white shadow-sm p-1 px-2 m-2 bg-white  hover:scale-110"
             >
               <a :href="`${project.live}`" target="_blank">
                 <img
@@ -49,7 +49,7 @@
               /></a>
             </button>
             <button
-              className="border-2 border-gray-600 rounded-2xl  shadow-sm p-1 px-2 m-2 bg-white "
+              className="border-2 border-gray-600 rounded-2xl  shadow-sm p-1 px-2 m-2 bg-white  hover:scale-110"
             >
               <a :href="`${project.github}`" target="_blank">
                 <img

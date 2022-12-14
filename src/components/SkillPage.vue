@@ -1,5 +1,6 @@
 <template>
   <div>
+    <!-- In this version, skills are grouped by skill type such as Database, Tools etc. -->
     <h4>Check Out My Skills</h4>
     <div v-for="skill in PROFILE.SKILLS" :key="skill">
       <div class="flex flex-col">
@@ -31,6 +32,7 @@
               </div>
             </div>
             <!-- refer to stackoverflow tailwind-css-align-text-in-center-of-border-on-element -->
+            <!-- skill title is displayed on the top of border for each skill type -->
             <h2
               class="absolute flex top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
             >

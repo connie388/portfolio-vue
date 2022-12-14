@@ -8,22 +8,23 @@
           <img
             v-if="!isDark && media.icon"
             :src="require(`@/assets/icons/${media.icon}`)"
-            class="object-cover h-8 w-8"
+            class="object-cover h-8 w-8 hover:scale-110"
           />
           <img
             v-if="isDark && media.icondark"
             :src="require(`@/assets/icons/${media.icondark}`)"
-            class="object-cover h-8 w-8"
+            class="object-cover h-8 w-8 hover:scale-110"
           />
           <div
             v-if="media.name"
-            class="rotate-90 w-8 text-black dark:text-white"
+            class="rotate-90 w-8 text-black dark:text-white hover:scale-110"
           >
             {{ media.name }}
           </div></a
         >
       </li>
     </ul>
+
     <!-- <div
       class="invisible md:visible border-r-2 border-black dark:border-white h-72 relative top-[26rem] right-4"
     ></div> -->
