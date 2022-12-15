@@ -12,7 +12,9 @@ module.exports = {
       //https://blog.logrocket.com/creating-custom-animations-tailwind-css/
       animation: {
         shine: "shine 1s",
-        "waving-hand": "wave 2s linear infinite",
+        waving: "wave 2s linear infinite",
+        "fade-in-right": "fade-in-right 1s ease-out",
+        "fade-in-left": "fade-in-left 1s ease-out",
       },
       //for gradient hover effect
       // refer to https://birdeatsbug.com/blog/creating-hover-effects-with-tailwind-css
@@ -33,6 +35,27 @@ module.exports = {
           "50%": { transform: "rotate(10.0deg)" },
           "60%": { transform: "rotate(0.0deg)" },
           "100%": { transform: "rotate(0.0deg)" },
+        },
+
+        "fade-in-right": {
+          "0%": {
+            opacity: "0",
+            transform: "translateX(-50px)",
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translateX(0)",
+          },
+        },
+        "fade-in-left": {
+          "0%": {
+            opacity: "0",
+            transform: "translateX(50px)",
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translateX(0)",
+          },
         },
       },
     },

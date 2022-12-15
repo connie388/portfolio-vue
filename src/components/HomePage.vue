@@ -12,7 +12,7 @@
         <ProjectWork />
       </div>
       <div id="contact" class="p-5 md:p-20">
-        <ContactPage />
+        <ContactPagev2 />
       </div>
     </div>
   </div>
@@ -24,7 +24,7 @@ import NavigationBar from "./NavigationBar.vue";
 import AboutMe from "./AboutMe";
 import SkillPagev2 from "./SkillPagev2";
 import ProjectWork from "./ProjectWork";
-import ContactPage from "./ContactPage";
+import ContactPagev2 from "./ContactPagev2";
 
 export default {
   components: {
@@ -32,7 +32,7 @@ export default {
     AboutMe,
     SkillPagev2,
     ProjectWork,
-    ContactPage,
+    ContactPagev2,
   },
   data() {
     return {

@@ -26,7 +26,7 @@
     @apply bg-slate-800 text-white;
   }
   .light-mode {
-    @apply bg-white text-slate-400;
+    @apply bg-white text-slate-800;
   }
 
   .selected {
@@ -37,11 +37,12 @@
     @apply bg-white hover:bg-blue-100  hover:bg-right-bottom shadow-md;
   }
 
-  .dark-mode-skill {
-    @apply hover:scale-95 transition-all duration-500 bg-gradient-to-br to-sky-100 via-sky-200 from-sky-100 bg-size-200 hover:bg-right-bottom  p-4 mb-1;
+  .specialeffect {
+    @apply hover:scale-95 transition-all duration-500 bg-gradient-to-br to-black via-gray-800 from-black bg-size-200 hover:bg-right-bottom  p-4 mb-1;
   }
-  .light-mode-skill {
-    @apply hover:scale-95 transition-all duration-500 bg-gradient-to-br to-yellow-50 via-yellow-100 from-yellow-50 bg-size-200 hover:bg-right-bottom  p-4 mb-1;
+
+  body {
+    @apply text-xs md:text-sm;
   }
 }
 
@@ -57,18 +58,29 @@
     @apply text-left block uppercase font-bold text-sm  text-gray-900 dark:text-white mb-2;
   }
 
-  .btn-primary {
-    @apply w-full py-2 px-4 text-white font-semibold rounded-lg shadow-md  rounded-xl transition-all duration-500 bg-gradient-to-br to-blue-600 via-blue-800 from-blue-300 bg-size-200 hover:bg-right-bottom hover:scale-95 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
-  }
   .btn {
     @apply w-full py-2 px-4 hover:scale-95 font-semibold rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
+  }
+  .btn-primary {
+    @apply w-full py-2 px-4 text-white font-semibold rounded-lg shadow-md  rounded-xl transition-all duration-500 bg-gradient-to-br to-blue-600 via-blue-800 from-blue-300 bg-size-200 hover:bg-right-bottom hover:scale-95 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
   }
 }
 
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Courier New", cursive, "Lucida Console", serif, sans-serif,
+    monospace, fantasy;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  /* color: #2c3e50; */
+}
+
+/* ============ flip hover styles ============ */
+.card:hover {
+  transform: rotateY(180deg);
+  transform-style: preserve-3d;
+}
+
+.card-back {
+  transform: rotateY(180deg);
 }

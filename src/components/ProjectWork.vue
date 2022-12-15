@@ -15,7 +15,7 @@
           <div class="mx-auto text-center text-2xl text-white">
             <img
               :src="require(`@/assets/projects/${project.img}`)"
-              class="object-cover"
+              class="object-cover hover:scale-110"
             />
           </div>
         </div>
@@ -68,7 +68,7 @@
           <div class="mx-auto text-center text-2xl text-white">
             <img
               :src="require(`@/assets/projects/${project.img}`)"
-              class="object-cover"
+              class="object-cover hover:scale-110"
             />
           </div>
         </div>
