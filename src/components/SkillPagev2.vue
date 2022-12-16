@@ -2,9 +2,7 @@
   <div>
     <!-- In this version, different skill type buttons are displayed and users can select the skill types -->
     <h4>Check Out My Skills</h4>
-    <div
-      class="flex justify-center align-center text-xs md:text-sm font-bold text-black mt-5"
-    >
+    <div class="flex justify-center align-center font-bold text-black mt-5">
       <div class="w-4/5">
         <div class="grid grid-cols-2 xl:grid-cols-4 gap-1">
           <div class="w-30" v-for="skill in PROFILE.SKILLS" :key="skill">

@@ -2,17 +2,21 @@ import { createRouter, createWebHistory } from "vue-router";
 import PageNotFound from "@/views/PageNotFound.vue";
 
 const routes = [
+  // {
+  //   path: "/",
+  //   name: "ProfileCard",
+  //   component: () => import("../components/ProfileCard.vue"),
+  //   meta: { transition: "fade" },
+  // },
   {
     path: "/",
-    name: "ProfileCard",
-    component: () => import("../components/ProfileCard.vue"),
-    meta: { transition: "fade" },
+    name: "WelcomePage",
+    component: () => import("../components/WelcomePage.vue"),
   },
   {
     path: "/HomePage",
     name: "Homepage",
     component: () => import("../components/HomePage.vue"),
-    meta: { transition: "fade" },
   },
   {
     path: "/:catchAll(.*)*",

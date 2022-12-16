@@ -36,7 +36,7 @@
             <h2
               class="absolute flex top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
             >
-              <span class="bg-gray-200 text-black font-bold px-2 text-sm">
+              <span class="bg-gray-200 text-black font-bold px-2">
                 {{ skill.name }}</span
               >
             </h2>

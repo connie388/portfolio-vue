@@ -6,7 +6,7 @@
         <div class="md:block lg:flex">
           <div class="md:w-full flex justify-center align-center lg:w-1/3">
             <img
-              class="object-cover h-48 w-48 animate-fade-in-right"
+              class="object-cover h-48 w-48 fade-in-image"
               :src="require(`@/assets/images/${PROFILE.IMAGE_URL}`)"
               alt="Personal Photo"
             />
@@ -34,3 +34,16 @@ export default {
   },
 };
 </script>
+<style scoped>
+.fade-in-image {
+  animation: fadeIn 5s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+</style>
