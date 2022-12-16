@@ -3,8 +3,8 @@
     class="bg-slate-800 flex h-screen w-full place-content-center items-center"
   >
     <div>
-      <div class="block">
-        <div class="flex justify-center align-center">
+      <div class="block spinned">
+        <div class="flex justify-center align-center hidetext">
           <div>
             <svg
               id="text1"
@@ -48,10 +48,13 @@
           </div>
         </div>
 
-        <div id="icon" class="flex justify-center align-center mt-20">
+        <div
+          id="icon"
+          class="flex justify-center align-center mt-20 iconspinned"
+        >
           <img
             :src="require(`@/assets/icons/c.svg`)"
-            class="object-fit hover:scale-110 iconanimated"
+            class="object-fit hover:scale-110 enlarged"
           />
         </div>
       </div>
@@ -62,29 +65,64 @@
 /* Run following in concole to find stroke-dasharray */
 /* document.querySelector("#text1 path").getTotalLength() */
 .text1Dashed {
-  stroke-dasharray: 612;
+  stroke-dasharray: 707;
   animation: text1dash 8s ease-in-out forwards infinite;
 }
 
 @keyframes text1dash {
   0% {
-    stroke-dashoffset: 612;
+    stroke-dashoffset: 707;
   }
   100% {
     stroke-dashoffset: 0;
   }
 }
 
-.iconanimated {
-  animation: iconanimate 8s ease-in-out forwards infinite;
+.enlarged {
+  animation: enlarge 8s ease-in-out forwards infinite;
 }
 
-@keyframes iconanimate {
+@keyframes enlarge {
   to {
     width: 60px;
   }
   from {
     width: 10px;
+  }
+}
+
+.hidetext {
+  animation: hide ease-in-out 5s forwards;
+  animation-delay: 2s;
+}
+@keyframes hide {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.spinned {
+  animation: spin 1000ms linear forwards infinite;
+  animation-delay: 2s;
+  animation-iteration-count: 0.75;
+}
+
+.iconspinned {
+  animation: spin 1000ms linear forwards infinite;
+  animation-delay: 2s;
+  animation-iteration-count: 1.25;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
 </style>

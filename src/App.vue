@@ -14,7 +14,7 @@ export default {
   },
 
   created() {
-    setTimeout(() => this.$router.push({ path: "/Homepage" }), 4000);
+    setTimeout(() => this.$router.push({ path: "/Homepage" }), 7000);
   },
 };
 </script>
