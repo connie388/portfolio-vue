@@ -93,7 +93,7 @@
 
 .hidetext {
   animation: hide ease-in-out 5s forwards;
-  animation-delay: 2s;
+  animation-delay: 4s;
 }
 @keyframes hide {
   0% {
@@ -107,13 +107,13 @@
 
 .spinned {
   animation: spin 1000ms linear forwards infinite;
-  animation-delay: 2s;
+  animation-delay: 4s;
   animation-iteration-count: 0.75;
 }
 
 .iconspinned {
   animation: spin 1000ms linear forwards infinite;
-  animation-delay: 2s;
+  animation-delay: 4s;
   animation-iteration-count: 1.25;
 }
 
