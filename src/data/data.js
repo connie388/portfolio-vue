@@ -1,11 +1,11 @@
 export const PROFILE = {
-  NAME: "Cecilia Pam",
+  NAME: "Testing Name",
   IMAGE_URL: "personal-photo.png",
   EMAIL: "test@gmail.com",
   INTRO: "Software Developer",
   LOCATION: "Toronto, ON",
   DESCRIPTION:
-    "Full Stack software developer with passion to deliver quality web applications. If you're looking for a developer to add to your team, I'd love to hear from you!",
+    "Full Stack software developer with passion to deliver quality web applications. I enjoy designing, building things.  I continue to learn new language, tools and framework. If you're looking for a developer to add to your team, I'd love to hear from you! I can work remote or prefer Greater Toronto Area.",
   SKILLS: [
     {
       name: "TOOLS",
@@ -157,8 +157,9 @@ export const PROFILE = {
   PROJECTS: [
     {
       name: "Order System",
-      description: "This is an order system with CRUD functionalities.",
-      img: "classic_cars.jpg",
+      description:
+        "This is an full stack order application with CRUD functionalities. Customer and order can be added, changed or delete (status). Front end using Vue 3 and Tailwind CSS. Version One - Backend using Java/Spring Boot/MySQL and Version Two - Backend using Express/Node JS/MySQL. Json format is for datainterchange.",
+      img: "order.png",
       style: "bg-yellow-300",
       left: true,
       live: "https://github.com/test/HelloWorld",
@@ -166,6 +167,7 @@ export const PROFILE = {
 
       technologies: [
         { name: "Vue", icon: "vue.png" },
+        { name: "Tailwind CSS", icon: "tailwind.png" },
         { name: "Spring Boot", icon: "spring-boot.png" },
         { name: "My SQL", icon: "mysql.svg" },
         { name: "Javascript", icon: "javascript.svg" },
@@ -175,17 +177,52 @@ export const PROFILE = {
     },
     {
       name: "Pizza",
-      description: "This is an order system with CRUD functionalities.",
-      img: "classic_cars.jpg",
+      description:
+        "In this application, front end use React, React ROM, React Router to create the functionalities of Pizza company. Backend using Node/Express JS and Mongo DB as database. Using Json as a datainterchange format.",
+      img: "pizza.png",
       style: "bg-blue-300",
       left: false,
-      live: "https://github.com/test",
-      github: "https://github.com/test/HelloWorld",
+      live: "https://connie388.github.io/pizza",
+      github: "https://github.com/connie388/pizza",
       technologies: [
         { name: "React JS", icon: "react.svg" },
+        { name: "Javascript", icon: "javascript.svg" },
         { name: "MongoDB", icon: "mongodb.svg" },
         { name: "Express JS", icon: "express-js.png" },
         { name: "Node JS", icon: "node-js.jpg" },
+      ],
+    },
+    {
+      name: "The Zone",
+      description:
+        "Inspired by Gaming Zone websites, front end use React, React ROM, React Router to create the website that able to illustrate different features of game rooms.",
+      img: "thezone.png",
+      style: "bg-blue-300",
+      left: false,
+      live: "https://connie388.github.io/thezone",
+      github: "https://github.com/connie388/thezone",
+      technologies: [
+        { name: "React JS", icon: "react.svg" },
+        { name: "HTML", icon: "html.svg" },
+        { name: "CSS", icon: "css.svg" },
+        { name: "Javascript", icon: "javascript.svg" },
+        { name: "Bootstrap", icon: "bootstrap.png" },
+      ],
+    },
+    {
+      name: "Restaurant",
+      description:
+        "A restaurant on-line menu created with HTML, CSS, Javascript",
+      img: "restaurant.png",
+      style: "bg-blue-300",
+      left: false,
+      live: "https://connie388.github.io/html-javascript-restaurant-static-page",
+      github:
+        "https://github.com/connie388/html-javascript-restaurant-static-page",
+      technologies: [
+        { name: "Javascript", icon: "javascript.svg" },
+        { name: "HTML", icon: "html.svg" },
+        { name: "CSS", icon: "css.svg" },
       ],
     },
   ],

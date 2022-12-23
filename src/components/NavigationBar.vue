@@ -143,7 +143,7 @@
             </router-link>
             <!-- refer to https://v1.tailwindcss.com/components/buttons download button -->
             <a
-              href="./pdf-test.pdf"
+              :href="pdf"
               target="_blank"
               class="block md:inline-block md:mt-0 mr-4"
             >
@@ -174,7 +174,7 @@
 import { PROFILE } from "@/data/data";
 import { ref, watch } from "vue";
 import SideBar from "./SideBar";
-
+import pdf from "../assets/documents/resume.pdf";
 export default {
   components: {
     SideBar,
@@ -182,6 +182,7 @@ export default {
   data() {
     return {
       PROFILE: Object.freeze(PROFILE),
+      pdf,
     };
   },
 
