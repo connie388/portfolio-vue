@@ -23,6 +23,7 @@
         <div class="align-center md:w-full lg:w-1/2">
           <!-- Description  -->
           <div className="p-2 border-b-2 text-left">
+            <h4>{{ project.name }}</h4>
             <h6>
               {{ project.description }}
             </h6>

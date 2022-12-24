@@ -5,7 +5,7 @@ export const PROFILE = {
   INTRO: "Software Developer",
   LOCATION: "Toronto, ON",
   DESCRIPTION:
-    "Full Stack software developer with passion to deliver quality web applications. I enjoy designing, building things.  I continue to learn new language, tools and framework. If you're looking for a developer to add to your team, I'd love to hear from you! I can work remote or prefer Greater Toronto Area.",
+    "Full Stack software developer with passion to deliver quality web applications. I enjoy designing, building things.  I continue to learn new language, tools and framework. If you're looking for a developer to add to your team, I'd love to hear from you! I can work remote or work in Greater Toronto Area.",
   SKILLS: [
     {
       name: "TOOLS",
@@ -156,9 +156,9 @@ export const PROFILE = {
   ],
   PROJECTS: [
     {
-      name: "Order System",
+      name: "Order Management System",
       description:
-        "This is an full stack order application with CRUD functionalities. Customer and order can be added, changed or delete (status). Front end using Vue 3 and Tailwind CSS. Version One - Backend using Java/Spring Boot/MySQL and Version Two - Backend using Express/Node JS/MySQL. Json format is for datainterchange.",
+        "An order application with CRUD features to maintain customer, product and order information. This application is developed with front end using Vue 3 and Tailwind CSS. Version One - Backend using Java/Spring Boot/MySQL and Version Two - Backend using Express/Node JS/MySQL. Json format is for datainterchange. This application based on MySQL sample database(https://www.mysqltutorial.org/mysql-sample-database.aspx).",
       img: "order.png",
       style: "bg-yellow-300",
       left: true,
@@ -178,7 +178,7 @@ export const PROFILE = {
     {
       name: "Pizza",
       description:
-        "In this application, front end use React, React ROM, React Router to create the functionalities of Pizza company. Backend using Node/Express JS and Mongo DB as database. Using Json as a datainterchange format.",
+        "This is an web application for handling a pizza restaurant's online orders. Users will be able to browse the menu, add items to their cart. Users can customize their input choices such as size, toppings, addons. Shopping cart will display orders and total amount. This application is developed with front end use React, React Router. Backend using Node/Express JS and Mongo DB as database. Using Json as a data interchange format.",
       img: "pizza.png",
       style: "bg-blue-300",
       left: false,
@@ -195,7 +195,7 @@ export const PROFILE = {
     {
       name: "The Zone",
       description:
-        "Inspired by Gaming Zone websites, front end use React, React ROM, React Router to create the website that able to illustrate different features of game rooms.",
+        "The Zone is a website for a party and facility rental company. This application is built with React and React Router Dom. Different components are dynamically rendered into navigable web pages",
       img: "thezone.png",
       style: "bg-blue-300",
       left: false,
@@ -210,19 +210,19 @@ export const PROFILE = {
       ],
     },
     {
-      name: "Restaurant",
+      name: "Portfolio",
       description:
-        "A restaurant on-line menu created with HTML, CSS, Javascript",
-      img: "restaurant.png",
-      style: "bg-blue-300",
-      left: false,
-      live: "https://connie388.github.io/html-javascript-restaurant-static-page",
-      github:
-        "https://github.com/connie388/html-javascript-restaurant-static-page",
+        "This responsive personal portfolio was developed using Vue JS, Tailwind CSS. ",
+      img: "portfolio.png",
+      style: "bg-yellow-300",
+      left: true,
+      live: "https://connie388.github.io/thezone",
+      github: "https://github.com/connie388/thezone",
       technologies: [
-        { name: "Javascript", icon: "javascript.svg" },
+        { name: "Vue", icon: "vue.png" },
+        { name: "Tailwind CSS", icon: "tailwind.png" },
         { name: "HTML", icon: "html.svg" },
-        { name: "CSS", icon: "css.svg" },
+        { name: "Javascript", icon: "javascript.svg" },
       ],
     },
   ],
