@@ -26,7 +26,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory("portfolio-vue"),
   routes,
   scrollBehavior(to, from, savedPosition) {
     if (to.hash) {
