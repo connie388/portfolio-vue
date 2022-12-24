@@ -162,8 +162,8 @@ export const PROFILE = {
       img: "order.png",
       style: "bg-yellow-300",
       left: true,
-      live: "https://github.com/test/HelloWorld",
-      github: "https://github.com/test/HelloWorld",
+      live: "https://connie388.github.io/order-vue",
+      github: "https://github.com/connie388/order-vue",
 
       technologies: [
         { name: "Vue", icon: "vue.png" },
@@ -216,8 +216,7 @@ export const PROFILE = {
       img: "portfolio.png",
       style: "bg-yellow-300",
       left: true,
-      live: "https://connie388.github.io/thezone",
-      github: "https://github.com/connie388/thezone",
+      github: "https://github.com/connie388/portfolio-vue",
       technologies: [
         { name: "Vue", icon: "vue.png" },
         { name: "Tailwind CSS", icon: "tailwind.png" },
