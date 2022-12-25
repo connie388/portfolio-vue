@@ -158,7 +158,7 @@ export const PROFILE = {
     {
       name: "Order Management System",
       description:
-        "An order application with CRUD features to maintain customer, product and order information. This application is developed with front end using Vue 3 and Tailwind CSS. Version One - Backend using Java/Spring Boot/MySQL and Version Two - Backend using Express/Node JS/MySQL. Json format is for data interchange. This application based on MySQL sample database(https://www.mysqltutorial.org/mysql-sample-database.aspx).",
+        "An order application with CRUD features to maintain customer, product and order information. This application is developed with front end using Vue 3 and Tailwind CSS. Version One - Backend using Java/Spring Boot/MySQL and Version Two - Backend using Express/Node JS/MySQL. Json format is for data interchange. This application based on MySQL sample database.",
       img: "order.png",
       style: "bg-yellow-300",
       left: true,
